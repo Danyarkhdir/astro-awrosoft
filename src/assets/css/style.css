@@ -73,7 +73,7 @@ h5,
 h6 {
   font-family: "Catamaran", sans-serif;
   font-weight: 800;
-  color: #1d1729;
+  color: black;
   margin: 0px;
 }
 
@@ -228,7 +228,7 @@ p {
 }
 .section-title .title {
   font-size: 45px;
-  color: #1d1729;
+  color: black;
   margin-top: 8px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -271,7 +271,7 @@ p {
   z-index: 99;
 }
 .infetech-header-area .templates-logo {
-  background: #1d1729;
+  background: black;
   padding: 42px 80px;
   height: 100%;
 }
@@ -642,7 +642,7 @@ p {
   padding: 10px 24px;
   margin: 0;
   position: relative;
-  color: #1d1729;
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -761,7 +761,7 @@ p {
 .header-main-info .header-main-info-contact .content a {
   font-size: 18px;
   font-weight: 500;
-  color: #1d1729;
+  color: black;
 }
 .header-main-info .header-mini-btn {
   margin-right: 30px;
@@ -793,7 +793,7 @@ p {
 }
 .header-main-info .header-mini-btn ul li a {
   font-size: 20px;
-  color: #1d1729;
+  color: black;
   margin-right: 30px;
 }
 @media (max-width: 767px) {
@@ -925,7 +925,7 @@ p {
   margin: -35px auto 0;
   transform: scaleX(0);
   transform-origin: center;
-  background-color: #1d1729;
+  background-color: black;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -954,7 +954,7 @@ p {
   display: block;
   font-size: 18px;
   line-height: 50px;
-  color: #1d1729;
+  color: black;
   height: 70px;
   width: 100%;
   padding: 10px 30px;
@@ -979,7 +979,7 @@ p {
   background: transparent;
   text-align: center;
   font-size: 24px;
-  color: #1d1729;
+  color: black;
   padding: 0;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
@@ -992,12 +992,12 @@ p {
 
 .search-popup .form-group input[type="submit"]:hover,
 .search-popup .form-group button:hover {
-  color: #1d1729;
+  color: black;
 }
 
 .search-popup input::placeholder,
 .search-popup textarea::placeholder {
-  color: #1d1729;
+  color: black;
 }
 
 .search-popup .close-search.style-two {
@@ -1029,7 +1029,7 @@ p {
   cursor: pointer;
   padding: 27px 0px;
   font-size: 18px;
-  color: #1d1729;
+  color: black;
   margin-left: 25px;
 }
 
@@ -1092,10 +1092,10 @@ p {
   margin-bottom: 30px;
 }
 .offcanvas_menu_wrapper .header-btn a {
-  color: #1d1729;
+  color: black;
 }
 .offcanvas_menu_wrapper .header-btn a:hover {
-  color: #1d1729;
+  color: black;
 }
 
 .offcanvas_main_menu li {
@@ -1116,7 +1116,7 @@ p {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ededed;
-  color: #1d1729;
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1137,7 +1137,7 @@ p {
 }
 .offcanvas_footer span a {
   font-size: 14px;
-  color: #1d1729;
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1164,7 +1164,7 @@ p {
   line-height: 30px;
   border: 1px solid #ededed;
   border-radius: 50%;
-  color: #1d1729;
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1185,7 +1185,7 @@ p {
   line-height: 39px;
   text-align: center;
   border: 1px solid #232323;
-  color: #1d1729;
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1225,7 +1225,7 @@ p {
 }
 
 .infetech-header-area-2 .header-topbar-layout-2 {
-  background: #1d1729;
+  background: black;
   position: relative;
   z-index: 20;
 }
@@ -1351,7 +1351,7 @@ p {
   .sub-menu
   li
   a {
-  color: #1d1729;
+  color: black;
 }
 .infetech-header-area-2 .header-main-nav-layout-2 .header-main-info {
   justify-content: flex-end;
@@ -1547,7 +1547,7 @@ p {
   ul
   li
   a {
-  color: #1d1729;
+  color: black;
 }
 .infetech-header-area-2.infetech-header-area-3
   .header-main-nav-layout-2
@@ -1608,7 +1608,7 @@ p {
     }
   }
   .header-main-nav-layout-2.header-sticky.sticky {
-    background: #1d1729;
+    background: black;
   }
 
   .infetech-header-area-2.infetech-header-area-3
@@ -2150,7 +2150,7 @@ p {
   .infetech-banner-slide-item
   .infetech-banner-content
   .title {
-  color: #1d1729;
+  color: black;
   font-size: 100px;
   padding-top: 0;
   line-height: 110px;
@@ -2189,7 +2189,7 @@ p {
   .title
   span {
   text-transform: capitalize;
-  color: #1d1729;
+  color: black;
   letter-spacing: inherit;
   position: relative;
   z-index: 10;
@@ -2305,7 +2305,7 @@ p {
 .infetech-banner-main-area .banner-play-icon .title {
   font-size: 16px;
   font-weight: 500;
-  color: #1d1729;
+  color: black;
   margin-left: 50px;
 }
 .infetech-banner-main-area
@@ -2491,7 +2491,7 @@ p {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #1d1729;
+  color: black;
   display: block;
   padding-top: 13px;
   padding-bottom: 14px;
@@ -3439,7 +3439,7 @@ p {
   display: none;
 }
 .infetech-service-slide-3-area .single-service-3-item .title {
-  color: #1d1729;
+  color: black;
 }
 .infetech-service-slide-3-area .single-service-3-item p {
   color: #6c6a72;
@@ -3496,7 +3496,7 @@ p {
   background-image: -webkit-linear-gradient(0deg, #5f2dee 0%, #b882fc 100%);
   background-image: -ms-linear-gradient(0deg, #5f2dee 0%, #b882fc 100%);
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
-  color: #1d1729;
+  color: black;
   position: relative;
   z-index: 10;
   font-size: 20px;
@@ -3579,7 +3579,7 @@ p {
     6.FEATURE css 
 ===========================*/
 .infetech-feature-area {
-  background: #1d1729;
+  background: black;
   padding-top: 180px;
   padding-bottom: 120px;
   position: relative;
@@ -3663,7 +3663,7 @@ p {
   fill: #fff;
 }
 .single-infetech-feature-item:hover .content .title a {
-  color: #1d1729;
+  color: black;
 }
 .single-infetech-feature-item:hover .content p {
   color: #6c6a72;
@@ -3738,7 +3738,7 @@ p {
 }
 .infetech-cta-box .cta-content .main-btn {
   background: #fff;
-  color: #1d1729;
+  color: black;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .infetech-cta-box .cta-content .main-btn {
@@ -3790,7 +3790,7 @@ p {
 }
 .infetech-cta-2-area .cta-btn a {
   background: #fff;
-  color: #1d1729;
+  color: black;
 }
 .infetech-cta-2-area .cta-btn a:hover {
   background: #b882fc;
@@ -4243,7 +4243,7 @@ p {
 .infetech-project-offer-area-2 .single-project-item-2 .project-content .text a {
   font-size: 20px;
   font-weight: 800;
-  color: #1d1729;
+  color: black;
   line-height: 26px;
 }
 .infetech-project-offer-area-2 .single-project-item-2 .project-content .icon {
@@ -4301,7 +4301,7 @@ p {
 }
 .infetech-project-slider-area-2 .single-project-slider-item .content .title a {
   font-size: 24px;
-  color: #1d1729;
+  color: black;
 }
 .infetech-project-slider-area-2 .single-project-slider-item .content span {
   color: #b882fc;
@@ -4372,7 +4372,7 @@ p {
   top: 0;
   width: 100%;
   height: 425px;
-  background: #1d1729;
+  background: black;
   z-index: -1;
 }
 .infetech-project-3-area .section-title {
@@ -4386,7 +4386,7 @@ p {
   display: none;
 }
 .infetech-project-3-area.services .section-title .title {
-  color: #1d1729;
+  color: black;
 }
 
 .infetech-project-4-area {
@@ -4495,7 +4495,7 @@ p {
   text-align: center;
   line-height: 40px;
   font-size: 14px;
-  color: #1d1729;
+  color: black;
   border-radius: 50%;
   background: #fff;
   margin-right: 10px;
@@ -4542,7 +4542,7 @@ p {
 .projects-details-content .small-text ul li {
   font-size: 18px;
   font-weight: 600;
-  color: #1d1729;
+  color: black;
   line-height: 38px;
 }
 .projects-details-content .small-text ul li img {
@@ -4587,7 +4587,7 @@ p {
   text-align: center;
   background: #f4f2f9;
   border-radius: 50%;
-  color: #1d1729;
+  color: black;
   transition: all linear 0.3s;
 }
 .projects-details-content .projects-details-page-changer ul li:hover .icon i {
@@ -4780,7 +4780,7 @@ p {
   .user-content
   .title {
   font-size: 20px;
-  color: #1d1729;
+  color: black;
 }
 .infetech-testimonial-area
   .single-testimonial-box
@@ -5156,7 +5156,7 @@ p {
 }
 .testimonial-slide-active-5 .testimonial-slide-item .box .content .title {
   font-size: 26px;
-  color: #1d1729;
+  color: black;
   text-transform: capitalize;
 }
 @media (max-width: 767px) {
@@ -5399,7 +5399,7 @@ p {
   text-align: center;
   line-height: 50px;
   display: block;
-  color: #1d1729;
+  color: black;
 }
 .single-tema-item .content .share-icon ul li a:hover {
   color: #5f2dee;
@@ -5513,7 +5513,7 @@ p {
   background: #f4f2f9;
   margin-right: 6px;
   border-radius: 50%;
-  color: #1d1729;
+  color: black;
   font-size: 14px;
 }
 .team-details-area .team-details-content ul li a:hover {
@@ -5576,7 +5576,7 @@ p {
   transform: translate(-50%, -50%);
   font-size: 30px;
   font-weight: 400;
-  color: #1d1729;
+  color: black;
 }
 .team-progress-area .team-progress-box {
   position: relative;
@@ -5685,7 +5685,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #1d1729;
+  background: black;
   opacity: 0.7;
   z-index: -2;
 }
@@ -5929,7 +5929,7 @@ p {
 }
 .single-blog-item .content .blog-meta .title a {
   font-size: 24px;
-  color: #1d1729;
+  color: black;
   margin-top: 10px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -6244,7 +6244,7 @@ p {
   padding: 10px 20px;
   font-size: 12px;
   font-weight: 700;
-  color: #1d1729;
+  color: black;
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-right: 6px;
@@ -6317,7 +6317,7 @@ p {
 .blog-social-box .blgo-tags-details span {
   font-size: 18px;
   font-weight: 800;
-  color: #1d1729;
+  color: black;
 }
 .blog-social-box .blgo-tags-details ul li {
   display: inline-block;
@@ -6341,7 +6341,7 @@ p {
 }
 .blog-social-box .blog-social-details ul li a {
   font-size: 20px;
-  color: #1d1729;
+  color: black;
   margin-left: 26px;
 }
 @media (max-width: 767px) {
@@ -6390,7 +6390,7 @@ p {
   }
 }
 .blog-post-prev-next .title a {
-  color: #1d1729;
+  color: black;
 }
 .blog-post-prev-next:hover {
   background: #5f2dee;
@@ -6850,7 +6850,7 @@ p {
   border-radius: 10px;
 }
 .go-top-wrap .go-top-btn:hover {
-  background-color: #1d1729;
+  background-color: black;
   color: #fff;
 }
 
@@ -7085,7 +7085,7 @@ p {
 .clients-tabs-item ul.nav {
   display: flex;
   justify-content: center;
-  column-gap: 30px;
+  column-gap: 16px;
   flex-wrap: nowrap;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7100,14 +7100,27 @@ p {
 }
 .clients-tabs-item ul.nav li button {
   background: #fff;
-  padding: 50px 0 45px;
+  padding: 15px 0 10px;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
   text-align: center;
-  width: 210px;
+  width: 140px;
+  height: 160px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .clients-tabs-item ul.nav li button {
-    width: 170px;
+    width: 115px;
+  }
+  .clients-tabs-item ul.nav {
+    column-gap: 10px;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .clients-tabs-item ul.nav li button {
+      width: 115px;
+    }
+    .clients-tabs-item ul.nav {
+      column-gap: 15px;
+    }
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7125,8 +7138,8 @@ p {
 .clients-tabs-item ul.nav li button span {
   display: block;
   font-weight: 800;
-  color: #1d1729;
-  font-size: 20px;
+  color: black;
+  font-size: 16px;
   margin-top: 5px;
 }
 .clients-tabs-item ul.nav li button.active {
@@ -7147,7 +7160,7 @@ p {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #1d1729;
+  border-top: 20px solid black;
 }
 .clients-tabs-item ul.nav li button.active::after {
   position: absolute;
@@ -7169,7 +7182,7 @@ p {
 
 .clients-content-box .title {
   font-size: 30px;
-  color: #1d1729;
+  color: black;
   margin-bottom: 22px;
 }
 .clients-content-box p {
@@ -7177,6 +7190,7 @@ p {
   color: #6c6a72;
   line-height: 30px;
   margin-bottom: 32px;
+  padding: 0 20px;
 }
 .clients-content-box a {
   border: 1px solid #f70f0f;
@@ -7350,7 +7364,7 @@ p {
 }
 .faq-box-area .faq-box-item a {
   background: #fff;
-  color: #1d1729;
+  color: black;
   line-height: 60px;
 }
 .faq-box-area .faq-box-item a:hover {
@@ -7499,7 +7513,7 @@ p {
   top: 135px;
   font-size: 30px;
   font-weight: 400;
-  color: #1d1729;
+  color: black;
   opacity: 0.2;
   text-transform: uppercase;
   letter-spacing: 21px;
@@ -7568,7 +7582,7 @@ p {
 }
 .information-content .quote-text p {
   font-size: 18px;
-  color: #1d1729;
+  color: black;
   font-weight: 600;
   line-height: 32px;
 }
@@ -7604,7 +7618,7 @@ p {
 .information-content .information-btns .play-btn span {
   font-size: 16px;
   font-weight: 700;
-  color: #1d1729;
+  color: black;
   margin: 0 0 0 18px;
 }
 
@@ -8064,7 +8078,7 @@ p {
 }
 .promo-banner-item a {
   background: #fff;
-  color: #1d1729;
+  color: black;
 }
 .promo-banner-item a:hover {
   color: #fff;
@@ -8571,11 +8585,11 @@ p {
 .infetech-contact-page-area .conatct-info .item .content .title {
   font-size: 20px;
   font-weight: 600;
-  color: #1d1729;
+  color: black;
   line-height: 30px;
 }
 .infetech-contact-page-area .conatct-info .item .content .title a {
-  color: #1d1729;
+  color: black;
 }
 
 .contact-form-page-box {
@@ -8748,7 +8762,7 @@ p {
   z-index: -1;
 }
 .benefits-content .benefits-service-box .content span {
-  color: #1d1729;
+  color: black;
   font-size: 20px;
   font-weight: 800;
   line-height: 30px;
@@ -8871,7 +8885,7 @@ p {
     21.SOLUTIONS css 
 ===========================*/
 .infetech-solutions-area {
-  background: #1d1729;
+  background: black;
   padding-top: 112px;
   padding-bottom: 116px;
   background-image: url(../images/solutions-shape.png);
@@ -9044,7 +9058,7 @@ p {
 .single-pricing-box .price-heading .title {
   font-size: 36px;
   font-weight: 800;
-  color: #1d1729;
+  color: black;
   line-height: 48px;
   padding-bottom: 10px;
   transition: all linear 0.3s;
@@ -9127,7 +9141,7 @@ p {
   font-size: 16px;
   font-weight: 600;
   line-height: 36px;
-  color: #1d1729;
+  color: black;
   transition: all linear 0.3s;
 }
 .single-pricing-box .price-featured ul li img {

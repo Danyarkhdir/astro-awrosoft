@@ -11,7 +11,7 @@ export default function ClientTabs() {
               return (
                 <ClientCard
                   id={card.id}
-                  svgIcon={card.svg}
+                  svgIcon={card.icon}
                   cardTitle={card.cardTitle}
                   style={card.style}
                   additions={card.additions}
