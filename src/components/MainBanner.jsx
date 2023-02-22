@@ -1,8 +1,9 @@
-export default function MainBanner() {
+export default function MainBanner({ title, bodyText, btnText }) {
+  let firstSpace = bodyText.indexOf(" ");
   return (
     <section className="infetech-banner-main-area">
       <div className="infetech-banner-area-layout-2 infetech-banner-area-layout-3">
-        <div className="infetech-banner-slide-item">
+        {/* <div className="infetech-banner-slide-item">
           <div className="container">
             <div className="row">
               <div className="col-lg-7">
@@ -31,7 +32,7 @@ export default function MainBanner() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="infetech-banner-slide-item item-2">
           <div className="container">
             <div className="row">
@@ -39,14 +40,21 @@ export default function MainBanner() {
                 <div className="infetech-banner-content">
                   <div className="info-text">
                     <span data-animation="fadeInDown" data-delay=".1s">
-                      Welcome to awrosoft
+                      {title}
                     </span>
                     <h1
                       className="title"
                       data-animation="fadeInLeft"
                       data-delay=".3s"
                     >
-                      <span>Powerfull</span> solutions for modern bussiness
+                      <span>
+                        {firstSpace === -1
+                          ? bodyText
+                          : bodyText.substr(0, firstSpace)}
+                      </span>{" "}
+                      {bodyText
+                        .substr(firstSpace, bodyText.length)
+                        .toUpperCase()}
                     </h1>
                     <a
                       className="main-btn"
@@ -54,7 +62,7 @@ export default function MainBanner() {
                       data-delay=".6s"
                       href="#"
                     >
-                      Learn More
+                      {btnText}
                     </a>
                   </div>
                 </div>
