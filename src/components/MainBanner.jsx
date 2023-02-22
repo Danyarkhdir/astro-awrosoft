@@ -1,5 +1,5 @@
-export default function MainBanner({ title, bodyText, btnText }) {
-  let firstSpace = bodyText.indexOf(" ");
+export default function MainBanner({ titleLabel, title, btnText }) {
+  let firstSpace = title.indexOf(" ");
   return (
     <section className="infetech-banner-main-area">
       <div className="infetech-banner-area-layout-2 infetech-banner-area-layout-3">
@@ -40,7 +40,7 @@ export default function MainBanner({ title, bodyText, btnText }) {
                 <div className="infetech-banner-content">
                   <div className="info-text">
                     <span data-animation="fadeInDown" data-delay=".1s">
-                      {title}
+                      {titleLabel}
                     </span>
                     <h1
                       className="title"
@@ -49,12 +49,10 @@ export default function MainBanner({ title, bodyText, btnText }) {
                     >
                       <span>
                         {firstSpace === -1
-                          ? bodyText
-                          : bodyText.substr(0, firstSpace)}
+                          ? title
+                          : title.substr(0, firstSpace)}
                       </span>{" "}
-                      {bodyText
-                        .substr(firstSpace, bodyText.length)
-                        .toUpperCase()}
+                      {title.substr(firstSpace, title.length).toUpperCase()}
                     </h1>
                     <a
                       className="main-btn"
