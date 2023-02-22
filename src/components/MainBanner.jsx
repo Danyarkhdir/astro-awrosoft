@@ -50,7 +50,7 @@ export default function MainBanner({ titleLabel, title, btnText }) {
                       <span>
                         {firstSpace === -1
                           ? title
-                          : title.substr(0, firstSpace)}
+                          : title.substr(0, firstSpace).toUpperCase()}
                       </span>{" "}
                       {title.substr(firstSpace, title.length).toUpperCase()}
                     </h1>

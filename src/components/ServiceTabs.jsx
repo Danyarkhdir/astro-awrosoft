@@ -1,15 +1,15 @@
-import ClientCard from "./ClientCard";
-import ClientTabContent from "./ClientTabContent";
-import { clientCards } from "../data/clientCards";
-export default function ClientTabs() {
+import ServiceCard from "./ServiceCard";
+import ServicesDesc from "./ServicesDesc";
+import { serviceCards } from "../data/serviceCards";
+export default function ServiceTabs() {
   return (
     <div className="row">
       <div className="col-lg-12">
         <div className="clients-tabs-item">
           <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            {clientCards.map((card) => {
+            {serviceCards.map((card) => {
               return (
-                <ClientCard
+                <ServiceCard
                   id={card.id}
                   svgIcon={card.icon}
                   cardTitle={card.cardTitle}
@@ -19,7 +19,7 @@ export default function ClientTabs() {
               );
             })}
           </ul>
-          <ClientTabContent />
+          <ServicesDesc />
         </div>
       </div>
     </div>

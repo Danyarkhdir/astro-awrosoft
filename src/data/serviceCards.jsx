@@ -1,4 +1,4 @@
-export const clientCards = [
+export const serviceCards = [
   {
     id: "pills-one-tab",
     icon: (

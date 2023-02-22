@@ -1,4 +1,4 @@
-export default function ClientCard({
+export default function ServiceCard({
   id,
   svgIcon,
   cardTitle,

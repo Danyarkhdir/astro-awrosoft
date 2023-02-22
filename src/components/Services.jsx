@@ -1,5 +1,5 @@
-import ClientTabs from "./ClientTabs";
-export default function ClientSection({ titleLabel, title }) {
+import ServiceTabs from "./ServiceTabs";
+export default function Services({ titleLabel, title }) {
   return (
     <section className="infetech-clients-area">
       <div className="container">
@@ -12,7 +12,7 @@ export default function ClientSection({ titleLabel, title }) {
           </div>
         </div>
       </div>
-      <ClientTabs />
+      <ServiceTabs />
     </section>
   );
 }

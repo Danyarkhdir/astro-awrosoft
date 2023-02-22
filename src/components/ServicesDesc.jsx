@@ -1,4 +1,4 @@
-export default function ClientTabContent() {
+export default function ServicesDesc() {
   const tabsContent = [
     {
       id: "pills-one",
