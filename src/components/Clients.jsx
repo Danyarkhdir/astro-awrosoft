@@ -106,7 +106,7 @@ export default function Clients() {
     },
     {
       title: "Institute of Research & Development - Kurdistan",
-      imagePath: "src/assets/images/clients/irdk-logo.png",
+      imagePath: "src/assets/images/clients/InstituteofReasearch-logo.png",
     },
     {
       title: "Gulan Media",
