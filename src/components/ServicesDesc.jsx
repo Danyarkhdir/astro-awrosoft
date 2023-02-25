@@ -57,12 +57,19 @@ export default function ServicesDesc() {
         "To complete our product suite and expand our relationship with customers, we offer additional services which enable our clients to receive the best result from their investment. The additional services include Implementation, Education & Training and After Sales Services.",
     },
   ];
+
+  const activeTab =
+    tabsContent.length % 2 === 0
+      ? tabsContent.length / 2 - 1
+      : Math.floor(tabsContent.length / 2);
   return (
     <div className="tab-content" id="pills-tabContent">
       {tabsContent.map((tab, index) => {
         return (
           <div
-            className={`tab-pane fade ${index === 2 ? "show active" : ""}`}
+            className={`tab-pane fade ${
+              index === activeTab ? "show active" : ""
+            }`}
             id={tab.id}
             role="tabpanel"
             aria-labelledby={tab.ariaLabelledby}
@@ -70,7 +77,7 @@ export default function ServicesDesc() {
             <div className="row justify-content-center">
               <div className="col-lg-8">
                 <div
-                  className="clients-content-box text-center animated wow fadeInUp"
+                  className="clients-content-box text-center animated  fadeInUp"
                   data-wow-duration="2000ms"
                   data-wow-delay="0ms"
                 >

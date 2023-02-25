@@ -7183,6 +7183,9 @@ p {
   fill: #f70f0f;
 }
 
+.clients-content-box {
+  animation: fadeInUp 1.5s ease-in-out;
+}
 .clients-content-box .title {
   font-size: 30px;
   color: black;
@@ -7719,7 +7722,6 @@ p {
 .infetech-offer-category-area {
   padding-top: 60px;
   padding-bottom: 110px;
-  background: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7727,7 +7729,7 @@ p {
 
 .infetech-offer-category-title {
   text-align: center;
-  color: white;
+  color: black;
   padding-bottom: 60px;
 }
 .infetech-offer-category-title > span {
@@ -7740,7 +7742,7 @@ p {
   background: #b882fc;
 }
 .infetech-offer-category-area .section-title .title {
-  color: #fff;
+  color: #f70f0f;
   text-align: center;
 }
 .infetech-offer-category-area .offer-content {
@@ -7749,8 +7751,38 @@ p {
 .infetech-offer-category-area .product {
   display: none;
 }
+
 .infetech-offer-category-area .product.active {
   display: block;
+  animation: fadeInRight 1.5s ease-in-out;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7766,7 +7798,7 @@ p {
 .infetech-offer-category-area .offer-content p {
   font-size: 16px;
   font-weight: 500;
-  color: #b0a9c0;
+  color: black;
   line-height: 30px;
   margin: 28px 30px 48px 0;
 }
@@ -7778,15 +7810,20 @@ p {
   display: flex;
   align-items: center;
   border: 1px solid #55515f;
-  padding-left: 40px;
+  border-radius: 5px;
+  padding-left: 28px;
   padding-top: 28px;
   padding-bottom: 28px;
   font-size: 20px;
   font-weight: 800;
-  color: #fff;
+  color: black;
   text-transform: capitalize;
   transition: all linear 0.3s;
 }
+.offer-category-item .box span {
+  margin-right: 10px;
+}
+
 .offer-category-item .box a i {
   font-size: 30px;
   color: #b882fc;
@@ -7794,14 +7831,14 @@ p {
   transition: all linear 0.3s;
 }
 .offer-category-item .box:hover a {
-  background: #fff;
   border-color: black;
-  color: black;
+  background: black;
+  color: white;
 }
 .offer-category-item .box .active {
   border-color: black;
-  background: #fff;
-  color: black;
+  background: black;
+  color: white;
 }
 .offer-category-item .box:hover a i {
   color: #000;

@@ -146,11 +146,11 @@ export default function Clients() {
     },
   ];
   return (
-    <div class="row infetech-sponser-slide">
+    <div className="row infetech-sponser-slide">
       {clients.map((client) => {
         return (
-          <div class="col-lg-3">
-            <div class="infetech-sponser-item">
+          <div className="col-lg-3">
+            <div className="infetech-sponser-item">
               <img src={`${client.imagePath}`} alt="" />
             </div>
           </div>
