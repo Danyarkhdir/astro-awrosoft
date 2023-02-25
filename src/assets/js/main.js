@@ -178,6 +178,43 @@
     }
     mainSlider();
 
+    //===== product toggle
+    (function () {
+      var products = document.querySelectorAll("[data-prdct]");
+      var productsDescription = document.querySelectorAll(
+        "[data-prdct-description]"
+      );
+
+      products.forEach((product) => {
+        product.addEventListener("click", () => {
+          changeProduct(product);
+        });
+      });
+
+      function changeProduct(product) {
+        products.forEach((prdct) => {
+          if (
+            product.getAttribute("data-toggle") ===
+            prdct.getAttribute("data-toggle")
+          ) {
+            prdct.classList.add("active");
+          } else {
+            prdct.classList.remove("active");
+          }
+        });
+        productsDescription.forEach((prdct) => {
+          if (
+            product.getAttribute("data-toggle") ===
+            prdct.getAttribute("data-toggle")
+          ) {
+            prdct.classList.add("active");
+          } else {
+            prdct.classList.remove("active");
+          }
+        });
+      }
+    })();
+
     //===== client slide v1 js
     $(".infetech-feature-slide").slick({
       arrows: false,

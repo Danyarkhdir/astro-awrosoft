@@ -7717,12 +7717,21 @@ p {
 }
 
 .infetech-offer-category-area {
-  padding-top: 118px;
+  padding-top: 60px;
   padding-bottom: 110px;
-  background-image: url(../images/offer-category-bg.jpg);
+  background: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.infetech-offer-category-title {
+  text-align: center;
+  color: white;
+  padding-bottom: 60px;
+}
+.infetech-offer-category-title > span {
+  color: #f70f0f;
 }
 .infetech-offer-category-area .section-title span {
   color: #b882fc;
@@ -7732,7 +7741,18 @@ p {
 }
 .infetech-offer-category-area .section-title .title {
   color: #fff;
+  text-align: center;
 }
+.infetech-offer-category-area .offer-content {
+  text-align: center;
+}
+.infetech-offer-category-area .product {
+  display: none;
+}
+.infetech-offer-category-area .product.active {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .infetech-offer-category-area .offer-content {
     margin-bottom: 30px;
@@ -7774,11 +7794,17 @@ p {
   transition: all linear 0.3s;
 }
 .offer-category-item .box:hover a {
-  background: #5f2dee;
-  border-color: #5f2dee;
+  background: #fff;
+  border-color: black;
+  color: black;
+}
+.offer-category-item .box .active {
+  border-color: black;
+  background: #fff;
+  color: black;
 }
 .offer-category-item .box:hover a i {
-  color: #fff;
+  color: #000;
 }
 
 /*===========================
