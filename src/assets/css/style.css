@@ -6519,7 +6519,7 @@ p {
 .infetech-footer-area {
   padding-top: 120px;
   padding-bottom: 107px;
-  background-image: url(../images/footer-bg.jpg);
+  background-image: url(../images/footer-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6541,6 +6541,7 @@ p {
   position: relative;
   padding-bottom: 14px;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 .infetech-footer-area .title::before {
   position: absolute;
@@ -6549,7 +6550,7 @@ p {
   bottom: 0;
   height: 2px;
   width: 17px;
-  background: #5f2dee;
+  background: #f70f0f;
 }
 @media (max-width: 767px) {
   .infetech-footer-area .title::before {
@@ -6568,8 +6569,8 @@ p {
 }
 .footer-about p {
   color: #b0a9c0;
-  line-height: 30px;
-  margin-top: 18px;
+  line-height: 33px;
+  margin-top: 14px;
 }
 .footer-about ul {
   margin-top: 20px;
@@ -6586,13 +6587,18 @@ p {
   width: 45px;
   text-align: center;
   line-height: 48px;
-  background: #15101e;
+  background: white;
   border-radius: 50%;
-  color: #aea8b9;
+  color: red;
+
   font-size: 18px;
 }
 .footer-about ul li a:hover {
-  background: #5f2dee;
+  background: black;
+}
+.fab,
+.far {
+  color: #f70f0f;
 }
 
 @media (max-width: 767px) {
@@ -6660,7 +6666,7 @@ p {
   border: 0;
   color: #fff;
   font-size: 18px;
-  background: #5f2dee;
+  background: black;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6688,20 +6694,21 @@ p {
 }
 .footer-info ul li i {
   color: #000;
-  font-size: 14px;
-  color: #b882fc;
+  font-size: 16px;
+  color: #f70f0f;
+  margin-top: 2px;
 }
 
 .footer-copyright {
-  background: #15101e;
-  border-top: 1px solid #322d3d;
+  background: black;
   padding: 30px 0;
 }
 .footer-copyright p {
   color: #b0a9c0;
 }
 .footer-copyright p a {
-  color: #b882fc;
+  color: #f70f0f;
+  margin: 0 5px;
 }
 
 /*===== Go Top =====*/

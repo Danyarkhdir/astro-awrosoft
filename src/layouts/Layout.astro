@@ -1,5 +1,6 @@
 ---
 import HeaderSection from "@components/HeaderSection";
+import Footer from "@components/Footer";
 export interface Props {
   title: string;
 }
@@ -28,6 +29,7 @@ import "../assets/css/style.css";
   <body>
     <HeaderSection />
     <slot />
+    <Footer />
 
     <script is:inline src="/src/assets/js/vendor/modernizr-3.6.0.min.js"
     ></script>
