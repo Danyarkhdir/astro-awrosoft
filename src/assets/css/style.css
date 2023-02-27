@@ -1454,6 +1454,7 @@ p {
   z-index: 199;
   left: 0;
   top: 0;
+  display: none;
 }
 .infetech-header-area-2.infetech-header-area-3 .top-line::before {
   position: absolute;
@@ -1463,9 +1464,10 @@ p {
   height: 5px;
   width: 50%;
   background: #f70f0f;
+  display: none;
 }
 .infetech-header-area-2.infetech-header-area-3 .header-main-nav-layout-2 {
-  top: 5px;
+  top: 0;
   background: black;
   padding: 25px 60px;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
@@ -2207,6 +2209,7 @@ p {
   left: 0;
   background-image: url(../images/banner-line.png);
   z-index: -1;
+  display: none;
 }
 @media (max-width: 767px) {
   .infetech-banner-area-layout-2.infetech-banner-area-layout-3
@@ -4888,7 +4891,8 @@ p {
 }
 
 .infetech-testimonial-4-area {
-  background-image: url(../images/testimonial-bg-2.jpg);
+  background: #f7f7f7;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4932,7 +4936,14 @@ p {
   margin: 5px 0;
 }
 .infetech-testimonial-4-area .testimonial-thumb-4 {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .infetech-testimonial-4-area .testimonial-thumb-4 .quote-icon {
   height: 115px;
@@ -4949,6 +4960,13 @@ p {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+}
+@media only screen and (min-width: 992px) {
+  .infetech-testimonial-4-area .testimonial-thumb-4 {
+    border: 20px solid rgba(0, 0, 0, 0.146);
+    border-radius: 144px;
+    padding: 1px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .infetech-testimonial-4-area .testimonial-thumb-4 .quote-icon {
@@ -4971,7 +4989,7 @@ p {
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  background: #b882fc;
+  background: black;
   z-index: -1;
 }
 .infetech-testimonial-4-area .testimonial-content-4 {
@@ -4999,12 +5017,12 @@ p {
   background: #b0a9c0;
 }
 .infetech-testimonial-4-area .testimonial-content-4 .section-title .title {
-  color: #fff;
+  color: black;
 }
 .infetech-testimonial-4-area .testimonial-content-4 .section-title p {
   font-weight: 500;
-  line-height: 40px;
-  color: #b0a9c0;
+  line-height: 25px;
+  color: rgb(84, 83, 83);
   font-size: 20px;
   margin-top: 25px;
 }
@@ -5016,7 +5034,7 @@ p {
   font-size: 20px;
 }
 .infetech-testimonial-4-area .clients-info .title span {
-  color: #b882fc;
+  color: #f70f0f;
   font-size: 14px;
   font-weight: 500;
   padding-left: 14px;
@@ -5035,18 +5053,26 @@ p {
 }
 .infetech-testimonial-4-area .testimonial-slider-active-4 .slick-arrow {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   height: 50px;
   width: 50px;
   text-align: center;
   line-height: 50px;
-  color: #423c4c;
-  border: 2px solid #423c4c;
+  color: #777;
+  border: 2px solid #777;
   border-radius: 50%;
   font-size: 20px;
   z-index: 20;
   cursor: pointer;
   transition: all linear 0.3s;
+}
+
+.slick-arrow .fal {
+  color: #777;
+}
+
+.slick-arrow .fal:hover {
+  color: #000;
 }
 .infetech-testimonial-4-area .testimonial-slider-active-4 .slick-arrow.prev {
   right: 70px;
@@ -5055,8 +5081,8 @@ p {
   right: 0px;
 }
 .infetech-testimonial-4-area .testimonial-slider-active-4 .slick-arrow:hover {
-  border-color: #fff;
-  color: #fff;
+  border-color: black;
+  color: #000;
 }
 
 .testimonial-area-5 {
@@ -7200,7 +7226,7 @@ p {
 }
 .clients-content-box p {
   font-size: 16px;
-  color: #6c6a72;
+  color: black;
   line-height: 30px;
   margin-bottom: 32px;
   padding: 0 20px;
@@ -7732,6 +7758,12 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.offer-category-area .row > div {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .infetech-offer-category-title {
@@ -7750,10 +7782,9 @@ p {
 }
 .infetech-offer-category-area .section-title .title {
   color: #f70f0f;
-  text-align: center;
 }
 .infetech-offer-category-area .offer-content {
-  text-align: center;
+  text-align: left;
 }
 .infetech-offer-category-area .product {
   display: none;
@@ -7762,6 +7793,7 @@ p {
 .infetech-offer-category-area .product.active {
   display: block;
   animation: fadeInRight 1.5s ease-in-out;
+  padding-left: 30px;
 }
 @keyframes fadeInLeft {
   from {
@@ -7806,12 +7838,12 @@ p {
   font-size: 16px;
   font-weight: 500;
   color: black;
-  line-height: 30px;
-  margin: 28px 30px 48px 0;
+  line-height: 20px;
+  margin: 15px 10px 35px 0;
 }
 
 .offer-category-item .box {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .offer-category-item .box a {
   display: flex;
@@ -7843,7 +7875,7 @@ p {
   color: white;
 }
 .offer-category-item .box .active {
-  border-color: black;
+  border-color: #000;
   background: black;
   color: white;
 }

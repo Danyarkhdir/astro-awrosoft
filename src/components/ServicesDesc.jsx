@@ -83,9 +83,9 @@ export default function ServicesDesc() {
                 >
                   <h4 className="title">{tab.tabTitle}</h4>
                   <p>{tab.tabContent}</p>
-                  <a className="main-btn" href="#">
+                  {/* <a className="main-btn" href="#">
                     Learn More
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

@@ -184,10 +184,15 @@
       var productsDescription = document.querySelectorAll(
         "[data-prdct-description]"
       );
-
+      var scrollToDescription = document.getElementById("product-desc");
+      const mediaQuery = window.matchMedia("(max-width: 992px)");
       products.forEach((product) => {
         product.addEventListener("click", () => {
           changeProduct(product);
+          mediaQuery.addEventListener("load", (event) => {
+            if (event.matches)
+              scrollToDescription.scrollIntoView({ behavior: "smooth" });
+          });
         });
       });
 

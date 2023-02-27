@@ -6,6 +6,7 @@ export default function ProductDesc({ productsDesc }) {
       data-wow-duration="1500ms"
       data-wow-delay="0ms"
       role="presentation"
+      id="product-desc"
     >
       {products.map((product, index) => {
         return (
@@ -23,7 +24,7 @@ export default function ProductDesc({ productsDesc }) {
               <h3 className="title">{product.title}</h3>
             </div>
             <div className="offer-content">
-              <p>{product.desc}</p>
+              {product.desc}
               {product.moreInfoLink && (
                 <a className="main-btn" href={product.moreInfoLink}>
                   Learn More

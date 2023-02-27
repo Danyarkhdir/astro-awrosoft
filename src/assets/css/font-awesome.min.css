@@ -14,7 +14,7 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  color: #6c6a72;
+  color: #777;
 }
 
 .fa-lg {
@@ -8220,7 +8220,6 @@ readers do not read off random characters that represent icons */
 
 .fal {
   font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
 }
 @font-face {
   font-family: "Font Awesome 5 Pro";
