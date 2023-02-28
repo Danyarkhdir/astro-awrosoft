@@ -1468,9 +1468,12 @@ p {
 }
 .infetech-header-area-2.infetech-header-area-3 .header-main-nav-layout-2 {
   top: 0;
-  background: black;
-  padding: 25px 60px;
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.37);
+  margin: 20px;
+  padding: 20px;
 }
 .infetech-header-area-2.infetech-header-area-3
   .header-main-nav-layout-2.header-main-nav-layout-4 {
@@ -1615,8 +1618,12 @@ p {
 
   .infetech-header-area-2.infetech-header-area-3
     .header-main-nav-layout-2.header-sticky.sticky {
-    top: 0;
-    background: black;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.37);
+    margin: 20px;
+    padding: 20px;
   }
 }
 /*Loader Css*/

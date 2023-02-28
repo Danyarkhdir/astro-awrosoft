@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
     <>
-      <footer class="infetech-footer-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-about">
+      <footer className="infetech-footer-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-6">
+              <div className="footer-about">
                 <a href="#">
                   <img src="src/assets/images/logo.png" alt="" />
                 </a>
@@ -18,30 +18,30 @@ export default function Footer() {
                 <ul>
                   <li>
                     <a href="#">
-                      <i class="fab fa-twitter"></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fab fa-linkedin "></i>
+                      <i className="fab fa-linkedin "></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fab fa-instagram"></i>
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-2 col-md-6">
-              <div class="footer-nav">
-                <h4 class="title">Links</h4>
+            <div className="col-lg-2 col-md-6">
+              <div className="footer-nav">
+                <h4 className="title">Links</h4>
                 <ul>
                   <li>
                     <a href="#">About us</a>
@@ -61,37 +61,37 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="footer-newsletter">
-                <h4 class="title">Newsletter</h4>
+            <div className="col-lg-4 col-md-6">
+              <div className="footer-newsletter">
+                <h4 className="title">Newsletter</h4>
                 <p>
                   Signup for our latest news & articles. We won’t give you spam
                   mails.
                 </p>
                 <form action="#">
-                  <div class="input-box">
+                  <div className="input-box">
                     <input type="text" placeholder="Email Address" />
                     <button>
-                      <i class="far fa-paper-plane"></i>
+                      <i className="far fa-paper-plane"></i>
                     </button>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-info">
-                <h4 class="title">Contact</h4>
+            <div className="col-lg-3 col-md-6">
+              <div className="footer-info">
+                <h4 className="title">Contact</h4>
                 <ul>
                   <li>
-                    <i class="fas fa-phone"></i>
+                    <i className="fas fa-phone"></i>
                     <span>+ 88 ( 9800 ) 6802</span>
                   </li>
                   <li>
-                    <i class="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"></i>
                     <span>needhelp@company.com</span>
                   </li>
                   <li>
-                    <i class="fas fa-map-marker"></i>
+                    <i className="fas fa-map-marker"></i>
                     <span>
                       Empire World,
                       <br /> Business Towers T4,
@@ -105,7 +105,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div class="footer-copyright text-center">
+      <div className="footer-copyright text-center">
         <p>
           © Copyright 2006 - 2021
           <a href="https://awrosoft.krd/"> Awrosoft </a>| All Rights Reserved. |

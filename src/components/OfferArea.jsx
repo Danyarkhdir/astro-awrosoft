@@ -45,24 +45,24 @@ export default function OfferArea() {
     },
   ];
   return (
-    <section class="infetech-offer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
+    <section className="infetech-offer-area">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-7">
             <div
-              class="section-title animated wow fadeInLeft"
+              className="section-title animated wow fadeInLeft"
               data-wow-duration="1500ms"
               data-wow-delay="0ms"
             >
-              <h3 class="title">Why Awrosoft ?</h3>
+              <h3 className="title">Why Awrosoft ?</h3>
             </div>
             <div
-              class="row animated wow fadeInLeft"
+              className="row animated wow fadeInLeft"
               data-wow-duration="1500ms"
               data-wow-delay="0ms"
             >
-              <div class="col-lg-6">
-                <div class="offer-text">
+              <div className="col-lg-6">
+                <div className="offer-text">
                   <p>
                     Awrosoft has many success stories in differemt industries
                     and domains.We have served over 300 customers in different
@@ -73,12 +73,12 @@ export default function OfferArea() {
                   <img src="src/assets/images/tm1small.png" alt="" />
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="offer-list">
+              <div className="col-lg-6">
+                <div className="offer-list">
                   <ul>
                     {offersDesc.map((offer) => (
                       <li>
-                        <i class="fas fa-arrow-right"></i>
+                        <i className="fas fa-arrow-right"></i>
                         <span>{offer.desc}</span>
                       </li>
                     ))}
@@ -87,14 +87,14 @@ export default function OfferArea() {
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div className="col-lg-5">
             <div
-              class="infetech-offer-thumb text-right animated wow fadeInRight"
+              className="infetech-offer-thumb text-right animated wow fadeInRight"
               data-wow-duration="1500ms"
               data-wow-delay="300ms"
             >
               <img src="src/assets/images/offer-thumb.png" alt="" />
-              {/* <div class="offer-icon">
+              {/* <div className="offer-icon">
                 <img src="src/assets/images/icon/offer-icon.png" alt="" />
               </div> */}
             </div>
