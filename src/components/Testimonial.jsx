@@ -71,7 +71,7 @@ export default function Testimonial() {
     // },
   ];
   return (
-    <section className="infetech-testimonial-4-area pt-80 pb-80">
+    <section className="infetech-testimonial-4-area pt-80 pb-90">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-1">
