@@ -5016,7 +5016,7 @@ p {
   span::before {
   background: #b0a9c0;
 }
-.infetech-testimonial-4-area .testimonial-content-4 .section-title .title {
+.infetech-testimonial-4-area .testimonial-content-4 .section-title > .title {
   color: black;
 }
 .infetech-testimonial-4-area .testimonial-content-4 .section-title p {
@@ -5024,14 +5024,16 @@ p {
   line-height: 25px;
   color: rgb(84, 83, 83);
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .infetech-testimonial-4-area .clients-info {
-  margin-top: 40px;
+  margin-top: 0;
 }
 .infetech-testimonial-4-area .clients-info .title {
-  color: #fff;
-  font-size: 20px;
+  color: #f70f0f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 2px;
 }
 .infetech-testimonial-4-area .clients-info .title span {
   color: #f70f0f;
