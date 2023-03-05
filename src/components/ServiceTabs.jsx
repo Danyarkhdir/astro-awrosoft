@@ -10,7 +10,7 @@ export default function ServiceTabs() {
             {serviceCards.map((card) => {
               return (
                 <ServiceCard
-                  id={card.id}
+                  id={card.cardTitle}
                   svgIcon={card.icon}
                   cardTitle={card.cardTitle}
                   style={card.style}
