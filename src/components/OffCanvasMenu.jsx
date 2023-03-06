@@ -135,8 +135,8 @@ export default function OffCanvasMenu(params) {
                 </div>
                 <div className="offcanvas_footer">
                   <span>
-                    <a href="mailto:pixydrops@gmail.com">
-                      <i className="fa fa-envelope-o"></i> pixydrops@gmail.com
+                    <a href="mailto:info@awrosoft.com">
+                      <i className="fa fa-envelope-o"></i> info@awrosoft.com
                     </a>
                   </span>
                 </div>

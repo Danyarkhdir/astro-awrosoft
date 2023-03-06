@@ -17,7 +17,7 @@ export default function Menu() {
             <div className="header-main-nav-box">
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
                   <a href="about.html">About</a>
@@ -70,7 +70,7 @@ export default function Menu() {
                   </ul>
                 </li>
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
             </div>

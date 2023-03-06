@@ -84,11 +84,11 @@ export default function Footer() {
                 <ul>
                   <li>
                     <i className="fas fa-phone"></i>
-                    <span>+ 88 ( 9800 ) 6802</span>
+                    <span>+964 750 7233223</span>
                   </li>
                   <li>
                     <i className="fas fa-envelope"></i>
-                    <span>needhelp@company.com</span>
+                    <span>info@awrosoft.com</span>
                   </li>
                   <li>
                     <i className="fas fa-map-marker"></i>
