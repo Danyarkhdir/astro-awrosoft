@@ -3,7 +3,7 @@ import phoneWhite2 from "@assets/images/icon/phone-white-2.svg";
 export default function Menu() {
   return (
     <header className="infetech-header-area-2 infetech-header-area-3">
-      <div className="top-line"></div>
+      {/* <div className="top-line"></div> */}
       <div className="header-main-nav-layout-2 header-sticky">
         <div className="row align-items-center">
           <div className="col-md-3">
@@ -79,7 +79,7 @@ export default function Menu() {
             <div className="header-main-info">
               <div className="header-mini-btn">
                 <ul>
-                  <li>
+                  {/* <li>
                     <a className="search-box-btn" href="#">
                       <i className="fal fa-search"></i>
                     </a>
@@ -88,7 +88,7 @@ export default function Menu() {
                     <a href="#">
                       <i className="fal fa-shopping-cart"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a className="toggle-bar canvas_open" href="#">
                       <i className="fal fa-bars"></i>
