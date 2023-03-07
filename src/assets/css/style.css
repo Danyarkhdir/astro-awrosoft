@@ -4004,6 +4004,12 @@ p {
   padding-bottom: 32px;
   z-index: 10;
 }
+.single-project-item {
+  background-color: rgba(0, 0, 0, 1);
+}
+.single-project-item .project-image {
+  opacity: 0.5;
+}
 .single-project-item .single-project-overlay::before {
   position: absolute;
   content: "";
@@ -4013,18 +4019,18 @@ p {
   width: 100%;
   background-image: -moz-linear-gradient(
     90deg,
-    #b882fc 0%,
-    rgba(184, 130, 252, 0) 65%
+    #f70f0f -15%,
+    rgba(184, 130, 252, 0) 40%
   );
   background-image: -webkit-linear-gradient(
     90deg,
-    #b882fc 0%,
-    rgba(184, 130, 252, 0) 65%
+    #f70f0f -15%,
+    rgba(184, 130, 252, 0) 40%
   );
   background-image: -ms-linear-gradient(
     90deg,
-    #b882fc 0%,
-    rgba(184, 130, 252, 0) 65%
+    #f70f0f -15%,
+    rgba(184, 130, 252, 0) 40%
   );
   z-index: -1;
   opacity: 0;
@@ -4044,7 +4050,7 @@ p {
   color: #000;
   font-weight: 800;
   font-size: 14px;
-  color: #b882fc;
+  color: #f70f0f;
   text-transform: uppercase;
   transition: all linear 0.3s;
 }
@@ -4063,6 +4069,15 @@ p {
   z-index: 20;
   opacity: 0;
   transition: all linear 0.3s;
+  margin-right: 5px;
+}
+.single-project-overlay .fa-long-arrow-right,
+.fa-info {
+  color: white;
+}
+.single-project-overlay a:hover .fa-long-arrow-right,
+.single-project-overlay a:hover .fa-info {
+  color: black;
 }
 @media only screen and (min-width: 992px) and (max-width: 1365px) {
   .single-project-item .single-project-overlay a {

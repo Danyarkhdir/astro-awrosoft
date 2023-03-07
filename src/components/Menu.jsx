@@ -24,50 +24,15 @@ export default function Menu() {
                 </li>
                 <li>
                   <a href="#">Pages</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="our-team.html">Our Team</a>
-                    </li>
-                    <li>
-                      <a href="team-details.html">Team Details</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="#">Services</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="service-1.html">Service 1</a>
-                    </li>
-                    <li>
-                      <a href="service-2.html">Service 2</a>
-                    </li>
-                    <li>
-                      <a href="service-3.html">Service 3</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
-                  <a href="#">Projects</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                      <a href="projects-details.html">Project Details</a>
-                    </li>
-                  </ul>
+                  <a href="/awro-works">Projects</a>
                 </li>
                 <li>
                   <a href="#">Blog</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a href="blog-details.html">Blog Details</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="/contact">Contact</a>
@@ -102,7 +67,7 @@ export default function Menu() {
                 </div>
                 <div className="content">
                   <span>Call Anytime</span>
-                  <a href="tel:+8898006802">+ 88 ( 9800 ) 6802</a>
+                  <a href="tel:+9647508233223">+964 (0) 750 8233223</a>
                 </div>
               </div>
             </div>
