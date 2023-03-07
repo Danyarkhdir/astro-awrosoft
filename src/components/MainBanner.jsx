@@ -83,7 +83,7 @@ export default function MainBanner({ titleLabel, title, btnText }) {
           </li>
           <li>
             <a href="#">
-              <i className="fab fa-pinterest-p"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </li>
           <li>

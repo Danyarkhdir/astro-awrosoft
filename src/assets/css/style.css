@@ -3986,6 +3986,7 @@ p {
 .single-project-item {
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 .single-project-item img {
   width: 100%;
@@ -4009,6 +4010,17 @@ p {
 }
 .single-project-item .project-image {
   opacity: 0.5;
+  user-select: none;
+}
+.active {
+  display: block;
+  position: relative; /* Added */
+  transition: all 0.3s ease-in-out; /* Added */
+}
+.hidden {
+  display: none;
+  position: relative; /* Added */
+  transition: all 0.3s ease-in-out; /* Added */
 }
 .single-project-item .single-project-overlay::before {
   position: absolute;
@@ -4079,13 +4091,12 @@ p {
 .single-project-overlay a:hover .fa-info {
   color: black;
 }
-@media only screen and (min-width: 992px) and (max-width: 1365px) {
-  .single-project-item .single-project-overlay a {
-    position: static;
-    opacity: 1;
-    margin-top: 15px;
-  }
+.single-project-item .single-project-overlay a {
+  position: static;
+  opacity: 1;
+  margin-top: 15px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .single-project-item .single-project-overlay a {
     position: static;
@@ -4247,8 +4258,8 @@ p {
 
 .solution-title {
   font-size: 2em;
-  margin-bottom: 40px;
-  text-align: center;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .solution-content {
@@ -4285,6 +4296,7 @@ p {
   margin: 0;
   margin-top: 10px;
 }
+
 @media screen and (min-width: 768px) {
   .solution-content {
     flex-direction: row;
@@ -4314,6 +4326,100 @@ p {
     padding-right: 20px;
   }
 }
+
+/* Categories Nav  */
+
+.categories-nav-section {
+  margin-top: 100px;
+}
+.categories-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+.category {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.category .material-symbols-outlined {
+  margin-left: 5px;
+  font-size: 20px !important;
+}
+
+.category.active {
+  background: #f70f0f;
+  color: white;
+  border-radius: 2px;
+}
+.categories-nav li:hover {
+  background: #f70f0f;
+}
+.category:hover {
+  color: white;
+  transition: color 0.3s;
+}
+/* category hover scale */
+.category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #f70f0f;
+  border-bottom: 1px solid #f70f0f;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.category:hover::before {
+  transform: scaleY(1.2);
+  opacity: 1;
+}
+
+.category::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #f70f0f;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.category:hover::after {
+  transform: scale(1);
+}
+/* End */
+@media screen and (max-width: 1200px) {
+  .categories-nav li {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+
+  .categories-preview {
+    padding: 50px 15px;
+  }
+}
+
+/* End */
 
 .infetech-project-offer-area-2 .single-project-item-2 {
   position: relative;
@@ -7795,6 +7901,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .infetech-offer-area {

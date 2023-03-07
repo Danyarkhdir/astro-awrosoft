@@ -39,7 +39,7 @@ export default function OffCanvasMenu(params) {
                 <div id="menu" className="text-left">
                   <ul className="offcanvas_main_menu">
                     <li className="menu-item-has-children active">
-                      <a href="#">Home</a>
+                      <a href="/">Home</a>
                     </li>
                     <li className="menu-item-has-children active">
                       <a href="about.html">About</a>

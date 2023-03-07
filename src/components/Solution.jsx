@@ -1,12 +1,12 @@
 export default function Solution({ title, imageUrl, description }) {
   return (
-    <div class="wow solution">
-      <h2 class="solution-title">{title}</h2>
-      <div class="solution-content">
-        <div class="solution-image">
+    <div className="wow solution">
+      <div className="solution-content">
+        <div className="solution-image">
           <img src={imageUrl} alt="solution-image" />
         </div>
-        <div class="solution-desc">
+        <div className="solution-desc">
+          <h2 className="solution-title">{title}</h2>
           <p>{description}</p>
         </div>
       </div>

@@ -220,6 +220,32 @@
       }
     })();
 
+    (function () {
+      const categories = document.querySelectorAll(".category");
+      const allProjects = document.querySelectorAll(
+        "[data-filter='awro-project']"
+      );
+
+      categories.forEach((category) => {
+        category.addEventListener("click", () => {
+          categories.forEach((btn) => btn.classList.remove("active"));
+          category.classList.add("active");
+          const filter = category.id;
+          allProjects.forEach((project) => {
+            console.log(project.getAttribute("filter"));
+            if (
+              filter === "all" ||
+              project.getAttribute("filter").includes(filter)
+            ) {
+              project.style.display = "block";
+            } else {
+              project.style.display = "none";
+            }
+          });
+        });
+      });
+    })();
+
     //===== client slide v1 js
     $(".infetech-feature-slide").slick({
       arrows: false,
