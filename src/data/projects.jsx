@@ -72,7 +72,7 @@ export const projects = [
   {
     name: "Awronore",
     info: "website",
-    dataFilter: "shipping",
+    dataFilter: "website",
     image: "src/assets/images/lowQuality/Awronore.jpg",
     link: null,
   },

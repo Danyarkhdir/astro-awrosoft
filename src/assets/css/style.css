@@ -1551,6 +1551,23 @@ p {
   .header-main-nav-box
   ul
   li
+  a.current {
+  color: black;
+}
+.infetech-header-area-2.infetech-header-area-3
+  .header-main-nav-layout-2
+  .header-main-nav-box
+  ul
+  li
+  a.current::before {
+  width: 16px;
+}
+
+.infetech-header-area-2.infetech-header-area-3
+  .header-main-nav-layout-2
+  .header-main-nav-box
+  ul
+  li
   a:hover::before {
   width: 16px;
 }

@@ -3,7 +3,7 @@ import Products from "./Products";
 import { products } from "../data/products";
 export default function ProductSection() {
   return (
-    <section className="infetech-offer-category-area">
+    <section id="products" className="infetech-offer-category-area">
       <h1 className="infetech-offer-category-title">
         <span>AWRO</span> PRODUCTS
       </h1>
