@@ -1,0 +1,30 @@
+---
+const { image, name, dataFilter, info, link } = Astro.props;
+---
+
+<div
+  class="col-lg-4 col-md-6 awro-project"
+  data-filter="awro-project"
+  data-filtering={dataFilter}
+>
+  <div class="single-project-item">
+    <img class="project-image" src={image} alt="" />
+    <div class="single-project-overlay">
+      <h4 class="title">{name}</h4>
+
+      <span>{info}</span>
+      <div>
+        <a href="">
+          <i class="fa fa-info" aria-hidden="true"></i>
+        </a>
+        {
+          link && (
+            <a target="_blank" href={link}>
+              <i class="fal fa-long-arrow-right" />
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -235,7 +235,7 @@
             console.log(project.getAttribute("filter"));
             if (
               filter === "all" ||
-              project.getAttribute("filter").includes(filter)
+              project.getAttribute("data-filtering").includes(filter)
             ) {
               project.style.display = "block";
             } else {

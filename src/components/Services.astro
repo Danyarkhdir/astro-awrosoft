@@ -1,0 +1,19 @@
+---
+import ServiceTabs from "./ServiceTabs.astro";
+
+const { titleLabel, title } = Astro.props;
+---
+
+<section class="infetech-clients-area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center mb-55">
+          <span>{titleLabel}</span>
+          <h3 class="title">{title}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ServiceTabs />
+</section>

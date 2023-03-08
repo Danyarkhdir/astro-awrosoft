@@ -1,0 +1,56 @@
+---
+import Project from "./Project.astro";
+import { projects } from "../data/projects";
+---
+
+<section class="categories-nav-section">
+  <ul id="categories-nav" class="categories-nav">
+    <li id="all" class="category active">
+      <span>All</span>
+      <span class="material-symbols-outlined"> all_match</span>
+    </li>
+    <li id="government" class="category">
+      <span>GOVERNMENT</span>
+      <span class="material-symbols-outlined">
+        {" "}assured_workload{" "}
+      </span>
+    </li>
+    <li id="ngo" class="category">
+      <span>NGO</span>
+      <span class="material-symbols-outlined"> corporate_fare</span>
+    </li>
+    <li id="ecommerce" class="category">
+      <span>ECOMMERCE</span>
+      <span class="material-symbols-outlined"> local_mall</span>
+    </li>
+    <li id="shipping" class="category">
+      <span>SHIPPING</span>
+      <span class="material-symbols-outlined"> local_shipping</span>
+    </li>
+    <li id="university" class="category">
+      <span>UNIVERSITY</span>
+      <span class="material-symbols-outlined"> School</span>
+    </li>
+    <li id="website" class="category">
+      <span>WEBSITE</span>
+      <span class="material-symbols-outlined"> web</span>
+    </li>
+  </ul>
+</section>
+<section class="infetech-projects-grid-area pt-120 pb-90">
+  <div class="container">
+    <div class="row">
+      {
+        projects.map((project) => (
+          <Project
+            image={project.image}
+            name={project.name}
+            info={project.info}
+            link={project.link}
+            dataFilter={project.dataFilter}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

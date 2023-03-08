@@ -1,0 +1,15 @@
+---
+const { title, imageUrl, description } = Astro.props;
+---
+
+<div class="wow solution">
+  <div class="solution-content">
+    <div class="solution-image">
+      <img src={imageUrl} alt="solution-image" />
+    </div>
+    <div class="solution-desc">
+      <h2 class="solution-title">{title}</h2>
+      <p>{description}</p>
+    </div>
+  </div>
+</div>

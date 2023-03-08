@@ -210,11 +210,4 @@ export const projects = [
     image: "src/assets/images/lowQuality/KRSO.jpg",
     link: "https://krso.gov.krd/",
   },
-  {
-    name: "KRSO",
-    info: "website",
-    dataFilter: "government website",
-    image: "src/assets/images/lowQuality/KRSO.jpg",
-    link: "https://krso.gov.krd/",
-  },
 ];

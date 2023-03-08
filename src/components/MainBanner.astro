@@ -1,0 +1,99 @@
+---
+const { titleLabel, title, btnText } = Astro.props;
+
+let firstSpace = title.indexOf(" ");
+---
+
+<section class="infetech-banner-main-area">
+  <div class="infetech-banner-area-layout-2 infetech-banner-area-layout-3">
+    {
+      /* <div class="infetech-banner-slide-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="infetech-banner-content">
+                  <div class="info-text">
+                    <span data-animation="fadeInDown" data-delay=".1s">
+                      Welcome to awrosoft
+                    </span>
+                    <h1
+                      class="title"
+                      data-animation="fadeInLeft"
+                      data-delay=".3s"
+                    >
+                      <span>POWERFUL</span> SOLUTIONS FOR MODERN BUSSINESS
+                    </h1>
+                    <a
+                      class="main-btn"
+                      data-animation="fadeInUp"
+                      data-delay=".6s"
+                      href="#"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */
+    }
+    <div class="infetech-banner-slide-item item-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="infetech-banner-content">
+              <div class="info-text">
+                <span data-animation="fadeInDown" data-delay=".1s">
+                  {titleLabel}
+                </span>
+                <h1 class="title" data-animation="fadeInLeft" data-delay=".3s">
+                  <span>
+                    {
+                      firstSpace === -1
+                        ? title
+                        : title.substr(0, firstSpace).toUpperCase()
+                    }
+                  </span>{" "}
+                  {title.substr(firstSpace, title.length).toUpperCase()}
+                </h1>
+                <a
+                  class="main-btn"
+                  data-animation="fadeInUp"
+                  data-delay=".6s"
+                  href="#"
+                >
+                  {btnText}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-social">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
