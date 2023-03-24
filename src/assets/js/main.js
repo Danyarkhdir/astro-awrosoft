@@ -82,17 +82,17 @@
     //===== banner animation slick slider
 
     function mainSlider() {
-      var BasicSlider = $(".infetech-banner-slide");
-      var BasicSlider2 = $(".infetech-banner-area-layout-2");
+      var BasicSlider = $(".awrosoft-banner-slide");
+      var BasicSlider2 = $(".awrosoft-banner-area-layout-2");
       BasicSlider.on("init", function (e, slick) {
         var $firstAnimatingElements = $(
-          ".infetech-banner-slide-active:first-child"
+          ".awrosoft-banner-slide-active:first-child"
         ).find("[data-animation]");
         doAnimations($firstAnimatingElements);
       });
       BasicSlider2.on("init", function (e, slick) {
         var $firstAnimatingElements = $(
-          ".infetech-banner-slide-item:first-child"
+          ".awrosoft-banner-slide-item:first-child"
         ).find("[data-animation]");
         doAnimations($firstAnimatingElements);
       });
@@ -101,7 +101,7 @@
         "beforeChange",
         function (e, slick, currentSlide, nextSlide) {
           var $animatingElements = $(
-            '.infetech-banner-slide-active[data-slick-index="' +
+            '.awrosoft-banner-slide-active[data-slick-index="' +
               nextSlide +
               '"]'
           ).find("[data-animation]");
@@ -113,7 +113,7 @@
         "beforeChange",
         function (e, slick, currentSlide, nextSlide) {
           var $animatingElements = $(
-            '.infetech-banner-slide-item[data-slick-index="' + nextSlide + '"]'
+            '.awrosoft-banner-slide-item[data-slick-index="' + nextSlide + '"]'
           ).find("[data-animation]");
           doAnimations($animatingElements);
         }
@@ -285,9 +285,29 @@
     };
 
     init();
-    // end jare
+
+    // Get all links with href starting with "#"
+    var scrollLinks = document.querySelectorAll('a[href^="#"]');
+
+    // Add event listeners to each link
+    scrollLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault(); // prevent default link behavior
+        var sectionId = link.getAttribute("href").substr(1);
+        var section = document.getElementById(sectionId);
+        var sectionTop = section.offsetTop;
+        var offset = 110; // change this value to adjust the offset
+
+        window.scrollTo({
+          top: sectionTop - offset,
+          behavior: "smooth",
+        });
+      });
+    });
+
+    ///////
     //===== client slide v1 js
-    $(".infetech-feature-slide").slick({
+    $(".awrosoft-feature-slide").slick({
       arrows: false,
       dots: false,
       infinite: true,
@@ -329,7 +349,7 @@
     });
 
     //===== client slide v1 js
-    $(".infetech-project-slide").slick({
+    $(".awrosoft-project-slide").slick({
       arrows: false,
       dots: true,
       infinite: true,
@@ -374,7 +394,7 @@
     });
 
     //===== client slide v1 js
-    $(".infetech-project-slide-2").slick({
+    $(".awrosoft-project-slide-2").slick({
       arrows: false,
       dots: true,
       infinite: true,
@@ -426,7 +446,7 @@
     });
 
     //===== client slide v1 js
-    $(".infetech-sponser-slide").slick({
+    $(".awrosoft-sponser-slide").slick({
       arrows: false,
       dots: false,
       infinite: true,
@@ -471,7 +491,7 @@
     });
 
     //===== client slide v1 js
-    $(".infetech-testimonial-slide").slick({
+    $(".awrosoft-testimonial-slide").slick({
       arrows: false,
       dots: true,
       infinite: true,
@@ -554,7 +574,7 @@
     });
 
     //===== client slide v1 js
-    $(".infetech-blog-slide-active").slick({
+    $(".awrosoft-blog-slide-active").slick({
       arrows: false,
       prevArrow:
         '<span class="prev"><i class="fal fa-long-arrow-left"></i></span>',
@@ -596,7 +616,7 @@
     });
 
     //===== client slide v1 js
-    $(".infetech-sponser-slide-3").slick({
+    $(".awrosoft-sponser-slide-3").slick({
       arrows: false,
       prevArrow:
         '<span class="prev"><i class="fal fa-long-arrow-left"></i></span>',

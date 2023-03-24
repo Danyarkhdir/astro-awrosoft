@@ -6,13 +6,13 @@
 ===========================*/
 
 
-.infetech-about-area{
+.awrosoft-about-area{
     margin-bottom: 20px;
     position: relative;
     z-index: 20;
     overflow: hidden;
     margin-bottom: -70px;
-    & .infetech-about-thumb{
+    & .awrosoft-about-thumb{
         position: relative;
         & .thumb{
             position: relative;
@@ -78,7 +78,7 @@
             }
         }
     }
-    &.infetech-about-service-area{
+    &.awrosoft-about-service-area{
         padding-bottom: 70px;
         @media #{$md} {
             padding-top: 70px;
@@ -86,7 +86,7 @@
         @media #{$xs} {
             padding-top: 70px;
         }
-        & .infetech-about-content{
+        & .awrosoft-about-content{
             & p{
                 font-size: 24px;
                 font-weight: 400;
@@ -128,7 +128,7 @@
                 }
             }
         }
-        & .infetech-about-thumb{
+        & .awrosoft-about-thumb{
             position: relative;
             z-index: 10;
             margin-right: -100px;
@@ -167,7 +167,7 @@
 
 
 
-.infetech-about-content{
+.awrosoft-about-content{
     padding-left: 70px;
     @media #{$lg} {
         padding-left: 0;
@@ -270,7 +270,7 @@
 
 
 
-.infetech-about-3-area{
+.awrosoft-about-3-area{
     padding-bottom: 120px;
     overflow: hidden;
     @media #{$md} {
@@ -395,7 +395,7 @@
 
 
 
-.infetech-about-4-area{
+.awrosoft-about-4-area{
     background-image: url(../images/about-bg.jpg);
     background-size: cover;
     background-position: center;

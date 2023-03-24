@@ -5,7 +5,7 @@
     2.HEADER css 
 ===========================*/
 
-.infetech-header-area{
+.awrosoft-header-area{
     position: absolute;
     left: 0;
     top: 0;
@@ -59,7 +59,7 @@
             }
         }
     }
-    &.infetech-header-area-5{
+    &.awrosoft-header-area-5{
         top: 30px;
         & .header-wrapper{
             background: $white;
@@ -920,7 +920,7 @@
 
 
 
-.infetech-header-area-2{
+.awrosoft-header-area-2{
     & .header-topbar-layout-2{
         background: $black;
         position: relative;
@@ -1074,7 +1074,7 @@
             }
         }
     }
-    &.infetech-header-area-3{
+    &.awrosoft-header-area-3{
         & .top-line{
             height: 5px;
             width: 100%;
@@ -1206,8 +1206,8 @@
             }
         }
     }
-    .infetech-header-area-2 {
-        &.infetech-header-area-3{
+    .awrosoft-header-area-2 {
+        &.awrosoft-header-area-3{
             & .header-main-nav-layout-2 {
                 &.header-sticky{
                     &.sticky{

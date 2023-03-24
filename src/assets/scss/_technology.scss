@@ -9,7 +9,7 @@
 
 
 
-.infetech-technology-area{
+.awrosoft-technology-area{
     position: relative;
     z-index: 10;
     &::before{
@@ -22,7 +22,7 @@
         background: #f4f2f9;
         z-index: -1;
     }
-    &.infetech-technology-service-area{
+    &.awrosoft-technology-service-area{
         @media #{$md} {
             padding-bottom: 70px;
         }

@@ -7,13 +7,13 @@
 
 
 
-.infetech-service-area{
+.awrosoft-service-area{
     position: relative;
     z-index: 25;
     @media #{$md} {
         padding-bottom: 60px;
     }
-    &.infetech-service-page-area{
+    &.awrosoft-service-page-area{
         margin-bottom: 0;
         padding-top: 120px;
         padding-bottom: 185px;
@@ -25,7 +25,7 @@
             padding-top: 80px;
             padding-bottom: 70px;
         }
-        & .single-infetech-serice-item{
+        & .single-awrosoft-serice-item{
             & .content{
                 box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.15);
             }
@@ -36,7 +36,7 @@
 
 
 
-.single-infetech-serice-item{
+.single-awrosoft-serice-item{
     margin-bottom: -86px;
         @media #{$md} {
             margin-bottom: 0;
@@ -99,7 +99,7 @@
 
 
 
-.infetech-service-3-area{
+.awrosoft-service-3-area{
     padding-bottom: 120px;
     margin-top: -30px;
     position: relative;
@@ -205,7 +205,7 @@
     }
 }
 
-.infetech-service-slide-3-area{
+.awrosoft-service-slide-3-area{
     padding-top: 70px;
     padding-bottom: 70px;
     @media #{$xs} {
@@ -282,7 +282,7 @@
 
 
 
-.infetech-sponser-slide-3{
+.awrosoft-sponser-slide-3{
     & .col-lg-4{
         margin-left: 15px;
         margin-right: 15px;
@@ -290,7 +290,7 @@
 }
 
 
-.infetech-service-area-5{
+.awrosoft-service-area-5{
 
 }
 

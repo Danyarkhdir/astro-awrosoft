@@ -6,7 +6,7 @@
 ===========================*/
 
 
-.infetech-banner-area{
+.awrosoft-banner-area{
 	position: relative;
 	z-index: 10;
 	overflow: hidden;
@@ -19,11 +19,11 @@
 	@media #{$xs} {
 		margin-bottom: 80px;
 	}
-	&.infetech-banner-layoyt-2{
+	&.awrosoft-banner-layoyt-2{
 		margin-top: -2px;
 		border: 0;
 	}
-	& .infetech-banner-slide-active{
+	& .awrosoft-banner-slide-active{
 		position: relative;
 		z-index: 10;
 		&::before{
@@ -67,7 +67,7 @@
 			background-repeat: no-repeat;
 		}
 	}
-	& .infetech-banner-content{
+	& .awrosoft-banner-content{
 		text-align: center;
 		display: flex;
 		align-items: center;
@@ -139,7 +139,7 @@
 			}
 		}
 	}
-	&.infetech-banner-slide{
+	&.awrosoft-banner-slide{
 		& .slick-arrow{
 			position: absolute;
 			right: 17%;
@@ -185,8 +185,8 @@
 
 
 
-.infetech-banner-area-layout-2{
-	& .infetech-banner-slide-item{
+.awrosoft-banner-area-layout-2{
+	& .awrosoft-banner-slide-item{
 		background: url(../images/banner-thumb-4.jpg);
 		padding-top: 250px;
 		padding-bottom: 130px;
@@ -214,7 +214,7 @@
 			background-size: cover;
 			z-index: -1;
 		}
-		& .infetech-banner-content{
+		& .awrosoft-banner-content{
 			& .play-btn{
 	            & a{
 	                height: 60px;
@@ -265,7 +265,7 @@
 	        }
 		}
 	}
-	&.infetech-banner-slide{
+	&.awrosoft-banner-slide{
 		& .slick-arrow{
 			position: absolute;
 			right: 17%;
@@ -301,7 +301,7 @@
 			}
 		}
 	}
-	&.infetech-banner-area-layout-3{
+	&.awrosoft-banner-area-layout-3{
 		margin-top: 103px;
 		@media #{$lg} {
 			margin-top: 96px;
@@ -312,7 +312,7 @@
 		@media #{$xs} {
 			margin-top: 92px;
 		}
-		& .infetech-banner-slide-item{
+		& .awrosoft-banner-slide-item{
 			background-image: url(../images/banner-thumb-8.jpg);
 			background-size: cover;
 			background-position: center;
@@ -323,7 +323,7 @@
 			&.item-2{
 				background-image: url(../images/banner-thumb-7.jpg);
 			}
-			& .infetech-banner-content{
+			& .awrosoft-banner-content{
 				& span{
 					font-weight: 800;
 					color: $theme-color-2;
@@ -388,7 +388,7 @@
 }
 
 
-.infetech-banner-main-area{
+.awrosoft-banner-main-area{
 	position: relative;
 	& .banner-social{
 		position: absolute;
@@ -460,8 +460,8 @@
 			margin-left: 50px;
 		}
 	}
-	& .infetech-banner-area-layout-2 {
-		& .infetech-banner-slide-item{
+	& .awrosoft-banner-area-layout-2 {
+		& .awrosoft-banner-slide-item{
 			padding-top: 144px;
 			padding-bottom: 150px;
 		}
@@ -483,7 +483,7 @@
 
 
 
-.infetech-banner-area-4{
+.awrosoft-banner-area-4{
 	padding-top: 205px;
 	padding-bottom: 77px;
 	position: relative;
@@ -571,7 +571,7 @@
 	}
 }
 
-.infetech-banner-area-5{
+.awrosoft-banner-area-5{
 	background: #f5f3f9;
 	padding: 295px 0 170px;
 	background-image: url(../images/footer-line.png);
