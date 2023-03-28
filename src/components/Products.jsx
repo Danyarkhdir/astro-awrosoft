@@ -9,7 +9,7 @@ export default function Products({ productsInfo }) {
         <div className="row">
           {productsInfo.map((productInfos, index) => {
             return (
-              <div id={productInfos.title} className="col-lg-6">
+              <div id={`product-${index}`} className="col-lg-6">
                 <div className="box">
                   <a
                     className={`${index === 0 ? "active" : ""}`}

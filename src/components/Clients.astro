@@ -4,9 +4,9 @@ const { clients } = Astro.props;
 
 <div class="row awrosoft-sponser-slide">
   {
-    clients.map((client) => {
+    clients.map((client, index) => {
       return (
-        <div class="col-lg-3">
+        <div id={`client${index}`} class="col-lg-3">
           <div class="awrosoft-sponser-item">
             <img src={`${client.imagePath}`} alt="" />
           </div>

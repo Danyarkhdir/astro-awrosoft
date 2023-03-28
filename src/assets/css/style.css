@@ -389,6 +389,7 @@ p {
   padding: 36px 0;
   margin-right: 45px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .awrosoft-header-area.awrosoft-header-area-5
     .header-wrapper
@@ -4021,6 +4022,7 @@ p {
   padding-left: 40px;
   padding-bottom: 32px;
   z-index: 10;
+  user-select: none;
 }
 .single-project-item {
   background-color: rgba(0, 0, 0, 1);
@@ -4076,7 +4078,6 @@ p {
   }
 }
 .single-project-item .single-project-overlay span {
-  color: #000;
   font-weight: 800;
   font-size: 14px;
   color: #f70f0f;

@@ -11,6 +11,7 @@ export default function ProductDesc({ productsDesc }) {
       {products.map((product, index) => {
         return (
           <div
+            id={`desc-${index}`}
             className={`product ${
               index === 0 ? "active" : ""
             } animated  fadeInRight`}

@@ -232,7 +232,6 @@
           category.classList.add("active");
           const filter = category.id;
           allProjects.forEach((project) => {
-            console.log(project.getAttribute("filter"));
             if (
               filter === "all" ||
               project.getAttribute("data-filtering").includes(filter)
@@ -251,7 +250,7 @@
     const link = (id) => document.querySelector(`a[href="#${id}"]`);
 
     const inView = (element) => {
-      var top = element.offsetTop;
+      var top = element.offsetTop - 120;
       var height = element.offsetHeight;
 
       while (element.offsetParent) {
@@ -305,7 +304,18 @@
       });
     });
 
-    ///////
+    let homeLink = document.getElementById("home-link");
+    let projectsLink = document.getElementById("projects-link");
+    let contactLink = document.getElementById("contact-link");
+    const currentPath = window.location.pathname;
+
+    if (currentPath === "/") {
+      homeLink.classList.add("current");
+    } else if (currentPath === "/awro-works") {
+      projectsLink.classList.add("current");
+    } else if (currentPath === "/contact") {
+      contactLink.classList.add("current");
+    }
     //===== client slide v1 js
     $(".awrosoft-feature-slide").slick({
       arrows: false,
@@ -800,6 +810,15 @@
         },
         1200
       );
+    });
+
+    // something to do
+
+    let btns = document.querySelectorAll(".project-info-btn");
+    btns.forEach((btn, index) => {
+      btn.addEventListener("click", function () {
+        console.log(index);
+      });
     });
   });
 })(jQuery);

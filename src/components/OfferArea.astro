@@ -68,8 +68,8 @@ const offersDesc = [
             <div class="offer-list">
               <ul>
                 {
-                  offersDesc.map((offer) => (
-                    <li>
+                  offersDesc.map((offer, index) => (
+                    <li id={`offer${index}`}>
                       <i class="fas fa-arrow-right" />
                       <span>
                         <span>{offer.desc}</span>

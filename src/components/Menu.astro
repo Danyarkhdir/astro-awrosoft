@@ -3,13 +3,24 @@ import logo from "@assets/images/logo.png";
 import phoneWhite2 from "@assets/images/icon/phone-white-2.svg";
 ---
 
+<script>
+  function navigateTo(url) {
+    window.location.href = url;
+  }
+  const homeLinks = document.querySelectorAll(".home-links");
+  homeLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.location.pathname !== "/") navigateTo("/");
+    });
+  });
+</script>
 <header class="awrosoft-header-area-2 awrosoft-header-area-3">
   {/* <div class="top-line"></div> */}
   <div class="header-main-nav-layout-2 header-sticky">
     <div class="row align-items-center">
       <div class="col-md-3">
         <div class="logo-white">
-          <a href="index-2.html">
+          <a href="/">
             <img src={logo} alt="" />
           </a>
         </div>
@@ -18,29 +29,29 @@ import phoneWhite2 from "@assets/images/icon/phone-white-2.svg";
         <div class="header-main-nav-box">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a id="home-link" href="/">Home</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a class="home-links" href="#services">Services</a>
             </li>
             <li>
-              <a href="#clients">Clients</a>
+              <a class="home-links" href="#clients">Clients</a>
             </li>
             <li>
-              <a href="#products">Products</a>
+              <a class="home-links" href="#products">Products</a>
             </li>
 
             <li>
-              <a href="#partners">Partners</a>
+              <a class="home-links" href="#partners">Partners</a>
             </li>
             <li>
-              <a href="#solutions">Solutions</a>
+              <a class="home-links" href="#solutions">Solutions</a>
             </li>
             <li>
-              <a href="/awro-works">Projects</a>
+              <a id="projects-link" href="/awro-works">Projects</a>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <a id="contact-link" href="/contact">Contact Us</a>
             </li>
           </ul>
         </div>
