@@ -1612,7 +1612,7 @@ p {
   color: #6c6a72;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 990px) {
   .header-sticky.sticky {
     position: fixed;
     left: 0;
