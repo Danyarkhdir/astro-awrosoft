@@ -10,7 +10,9 @@ import phoneWhite2 from "@assets/images/icon/phone-white-2.svg";
   const homeLinks = document.querySelectorAll(".home-links");
   homeLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (window.location.pathname !== "/") navigateTo("/");
+      if (window.location.pathname !== "/") {
+        navigateTo("/");
+      }
     });
   });
 </script>

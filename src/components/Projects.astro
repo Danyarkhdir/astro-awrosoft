@@ -41,16 +41,211 @@ import { projects } from "../data/projects";
   <div class="container">
     <div class="row">
       {
-        projects.map((project) => (
+        projects.map((project, index) => (
           <Project
             image={project.image}
             name={project.name}
             info={project.info}
             link={project.link}
             dataFilter={project.dataFilter}
+            projectNumber={index}
           />
         ))
       }
     </div>
   </div>
 </section>
+<div class="project-modal" id="project-modal">
+  <div class="project-modal-content">
+    <div class="modal-header">
+      <span class="modal-close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <img src="" id="project-img" alt="Placeholder Image" />
+      <div class="modal-text">
+        <h2 class="project-title"></h2>
+        <h3 class="project-type"></h3>
+        <p class="project-description"></p>
+        <a href="" target="_blank" class="project-visit"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Modal */
+  .project-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Modal Content */
+  .project-modal-content {
+    background-color: #fefefe;
+    margin: 4% auto;
+    padding: 10px;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Responsive Styles */
+
+  /* Modal Header */
+  .modal-header {
+    display: flex;
+    justify-content: flex-end !important;
+    padding: 10px 10px !important;
+    align-items: center;
+  }
+
+  /* Modal Body */
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  .modal-body img {
+    max-width: 50%;
+    margin-right: 20px;
+  }
+
+  .modal-text {
+    max-width: 50%;
+  }
+
+  .modal-text h2 {
+    margin: 0;
+  }
+
+  .modal-text h3 {
+    margin: 10px 0;
+    color: #f70f0f;
+  }
+
+  .modal-text p {
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+  }
+  .modal-text a {
+    margin: 0;
+    color: rgb(94, 94, 227);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  /* Close Button */
+  .modal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .modal-close:hover,
+  .modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .project-type {
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    .project-modal-content {
+      margin: 4% auto;
+      width: 90%;
+    }
+
+    .modal-body {
+      flex-direction: column;
+    }
+
+    .modal-body img {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .modal-text {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<script>
+  import { projects } from "src/data/projects";
+  // Get references to the project links and the modal elements
+  const body = document.querySelector("body");
+  const projectLinks = document.querySelectorAll(".project-link");
+  const projectModal = document.querySelector("#project-modal");
+  const modalTitle = projectModal.querySelector(".project-title");
+  const modalType = projectModal.querySelector(".project-type");
+  const modalImage = projectModal.querySelector("#project-img");
+  const projectHref = projectModal.querySelector(".project-visit");
+
+  const modalDescription = projectModal.querySelector(".project-description");
+  const modalClose = projectModal.querySelector(".modal-close");
+
+  // Add click event listeners to the project links
+  projectLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      // Get the project ID from the link's data attribute
+      const projectId = parseInt(link.getAttribute("data-project-number"));
+
+      // Set the modal title and description based on the project ID
+      modalImage.src = projects[projectId].highQualityImage;
+      modalTitle.innerHTML = projects[projectId].name;
+      if (projects[projectId].link) {
+        projectHref.href = projects[projectId].link;
+        projectHref.innerHTML = projects[projectId].link.toUpperCase();
+      } else {
+        projectHref.href = "";
+        projectHref.innerHTML = "";
+      }
+      modalType.innerHTML = projects[projectId].info.toUpperCase();
+      modalDescription.innerHTML = projects[projectId].description;
+
+      // Display the modal
+      projectModal.style.display = "block";
+      body.style.overflow = "hidden";
+    });
+  });
+
+  // Add click event listener to the modal close button
+  modalClose.addEventListener("click", () => {
+    // Hide the modal
+    body.style.overflow = "visible";
+    projectModal.style.display = "none";
+  });
+
+  // Add click event listener to the modal background
+  projectModal.addEventListener("click", (event) => {
+    // If the user clicked on the modal background (not the content), hide the modal
+    if (event.target === projectModal) {
+      body.style.overflow = "visible";
+      projectModal.style.display = "none";
+    }
+  });
+
+  // Add keydown event listener to the document
+  document.addEventListener("keydown", (event) => {
+    // If the user pressed the Escape key, hide the modal
+    if (event.key === "Escape") {
+      projectModal.style.display = "none";
+    }
+  });
+</script>
