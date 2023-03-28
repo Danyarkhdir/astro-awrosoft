@@ -289,7 +289,7 @@ export const projects = [
     name: "Zagros TV",
     info: "website / mobile app",
     dataFilter: "website",
-    image: "../assets/images/lowQuality/Zagros.jpg",
+    image: "src\\assets\\images\\lowQuality\\Zagros.jpg",
     highQualityImage: "/src/assets/images/highQuality/Zagros.jpg",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quisquam, reprehenderit totam eligendi laudantium eaque ea dicta magnam accusamus iusto exercitationem nobis adipisci sapiente enim culpa veniam quis? Voluptas, dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nihil quisquam ipsam voluptatibus consectetur earum laboriosam sit nemo culpa! Illum repellendus officiis architecto harum eaque maiores explicabo culpa sunt!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quisquam, reprehenderit totam eligendi laudantium eaque ea dicta magnam accusamus iusto exercitationem nobis adipisci sapiente enim culpa veniam quis? Voluptas, dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nihil quisquam ipsam voluptatibus consectetur earum laboriosam sit nemo culpa! Illum repellendus officiis architecto harum eaque maiores explicabo culpa sunt!",
