@@ -1,11 +1,12 @@
 {
+	
 	"name": "",
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "astro dev --host",
 		"start": "astro dev",
-		"build": "astro build",
+		"build": "parcel build index.astro open/index.astro open/developer-toolchest/index.astro open/the-mycelium-network/index.astro",
 		"preview": "astro preview",
 		"astro": "astro"
 	},
