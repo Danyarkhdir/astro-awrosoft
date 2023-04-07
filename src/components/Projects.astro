@@ -43,7 +43,7 @@ import { projects } from "../data/projects";
       {
         projects.map((project, index) => (
           <Project
-            image="/src/assets/images/lowQuality/Awronore.jpg"
+            image={project.image}
             name={project.name}
             info={project.info}
             link={project.link}

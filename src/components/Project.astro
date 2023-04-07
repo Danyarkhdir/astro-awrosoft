@@ -8,11 +8,7 @@ const { image, name, dataFilter, info, link, projectNumber } = Astro.props;
   data-filtering={dataFilter}
 >
   <div class="single-project-item">
-    <img
-      class="project-image"
-      src="src/assets/images/lowQuality/BonLili.jpg"
-      alt=""
-    />
+    <img class="project-image" src={image} alt="" />
     <div class="single-project-overlay">
       <h4 class="title">{name}</h4>
 
