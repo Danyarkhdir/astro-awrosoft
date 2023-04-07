@@ -4,11 +4,11 @@
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
-		"start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-		
+		"dev": "astro dev --host",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
 	},
 	"dependencies": {
 		"@astrojs/react": "^2.0.2",
