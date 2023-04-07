@@ -1,14 +1,14 @@
 {
 	
-	"name": "",
+	"name": "awrosoft",
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "astro dev --host",
-		"start": "astro dev",
-		"build": "parcel build index.astro open/index.astro open/developer-toolchest/index.astro open/the-mycelium-network/index.astro",
-		"preview": "astro preview",
-		"astro": "astro"
+		"start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+		
 	},
 	"dependencies": {
 		"@astrojs/react": "^2.0.2",
