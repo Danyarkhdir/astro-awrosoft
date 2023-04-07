@@ -3,7 +3,7 @@ export const projects = [
     name: "NassWallet",
     info: "Website",
     dataFilter: "website",
-    image: "_astro/src/assets/images/lowQuality/NassWallet.jpg",
+    image: "/src/assets/images/lowQuality/NassWallet.jpg",
     highQualityImage: "src/assets/images/highQuality/NassWallet.jpg",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quisquam, reprehenderit totam eligendi laudantium eaque ea dicta magnam accusamus iusto exercitationem nobis adipisci sapiente enim culpa veniam quis? Voluptas, dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nihil quisquam ipsam voluptatibus consectetur earum laboriosam sit nemo culpa! Illum repellendus officiis architecto harum eaque maiores explicabo culpa sunt!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quisquam, reprehenderit totam eligendi laudantium eaque ea dicta magnam accusamus iusto exercitationem nobis adipisci sapiente enim culpa veniam quis? Voluptas, dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nihil quisquam ipsam voluptatibus consectetur earum laboriosam sit nemo culpa! Illum repellendus officiis architecto harum eaque maiores explicabo culpa sunt!",
@@ -13,7 +13,7 @@ export const projects = [
     name: "Foras",
     info: "Stuffing Website",
     dataFilter: "ngo website",
-    image: "_astro/src/assets/images/lowQuality/Foras.jpg",
+    image: "/src/assets/images/lowQuality/Foras.jpg",
     highQualityImage: "src/assets/images/highQuality/Foras.png",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quisquam, reprehenderit totam eligendi laudantium eaque ea dicta magnam accusamus iusto exercitationem nobis adipisci sapiente enim culpa veniam quis? Voluptas, dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nihil quisquam ipsam voluptatibus consectetur earum laboriosam sit nemo culpa! Illum repellendus officiis architecto harum eaque maiores explicabo culpa sunt!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quisquam, reprehenderit totam eligendi laudantium eaque ea dicta magnam accusamus iusto exercitationem nobis adipisci sapiente enim culpa veniam quis? Voluptas, dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nihil quisquam ipsam voluptatibus consectetur earum laboriosam sit nemo culpa! Illum repellendus officiis architecto harum eaque maiores explicabo culpa sunt!",
